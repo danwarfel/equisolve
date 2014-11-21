@@ -3,19 +3,24 @@
 /* Large desktop */
 @media (min-width: 1200px) {
 	h2{ font-size:38px;}
+	img.loader{margin-top: -96px;}
 }
  
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
 	h2{ font-size:30px;}
+	img.loader{margin-top: -88px;}
 }
  
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
 	h2{ font-size:24px;}
+	img.loader{margin-top: -82px;}
 }
  
 /* Landscape phones and down */
 @media (max-width: 480px) {
 	h2{ font-size:18px;}
+	img.loader{margin-top: -76px;}
 }
+

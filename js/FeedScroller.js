@@ -49,7 +49,7 @@ FeedScroller.prototype.template = function(url, context, callback) {
 
 FeedScroller.prototype.fetch = function(limit,callback) {
 	var scroller = this;
-	$(".loading").show();
+	$("img.loader").show();
 
 	var url = scroller.feedURL+"?limit="+limit+"&offset="+scroller.offset;
 	$.getJSON(url, function(result) {
@@ -65,8 +65,9 @@ FeedScroller.prototype.fetch = function(limit,callback) {
 
 FeedScroller.prototype.render = function(output) {
 	var scroller = this;
-	$(output).hide().appendTo(".scroller").fadeIn(333,function(){
-		$(".loading").hide();
+
+	$(output).hide().appendTo(".scroller").fadeIn(700,function(){
+		$("img.loader").hide();
 	});
 	
 };
