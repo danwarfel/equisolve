@@ -65,7 +65,8 @@ FeedScroller.prototype.fetch = function(limit,callback) {
 
 FeedScroller.prototype.render = function(output) {
 	var scroller = this;
-	$(".loading").hide();
-	$(output).hide().appendTo(".scroller").fadeIn();
+	$(output).hide().appendTo(".scroller").fadeIn(333,function(){
+		$(".loading").hide();
+	});
 	
 };
